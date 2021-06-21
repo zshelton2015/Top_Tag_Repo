@@ -1,0 +1,186 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      6996,        176]
+NotebookOptionsPosition[      6208,        154]
+NotebookOutlinePosition[      6607,        170]
+CellTagsIndexPosition[      6564,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"net", "=", 
+  RowBox[{"NetChain", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"LinearLayer", "[", "30", "]"}], ",", 
+      RowBox[{"ElementwiseLayer", "[", "Ramp", "]"}], ",", 
+      RowBox[{"LinearLayer", "[", "3", "]"}], ",", 
+      RowBox[{"SoftmaxLayer", "[", "]"}]}], "}"}], ",", 
+    RowBox[{"\"\<Input\>\"", "->", 
+     RowBox[{"{", "2", "}"}]}], ",", 
+    RowBox[{"\"\<Output\>\"", "->"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8326971299648757`*^9, 3.8326971617381597`*^9}, {
+  3.832697667487447*^9, 3.8326976729666524`*^9}, {3.832697742687522*^9, 
+  3.8326978152473288`*^9}},ExpressionUUID->"1ba07287-91dd-4587-83e7-\
+4fa8ea4994b7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NetChain", "tyfail2", 
+   "\"Inferred inconsistent \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"rank\\\\\\\"\\\"}]\\)s for \\!\\(\\*RowBox[{\\\"\
+\\\\\\\"output of layer 4\\\\\\\"\\\"}]\\) (\\!\\(\\*RowBox[{\\\"\\\\\\\"a \
+scalar\\\\\\\"\\\"}]\\) versus \\!\\(\\*RowBox[{\\\"\\\\\\\"a \
+vector\\\\\\\"\\\"}]\\)).\"", 2, 2, 1, 33047922639539454278, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.832697809984309*^9},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"8a148f40-8df3-42f4-83fb-471e8b0a1eb6"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.8326977451826644`*^9, 3.8326978100148354`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"9c1829c6-21d4-411b-af70-2777772824ba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NetDecoder", "[", "\"\<Boolean\>\"", "]"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"4eb02e85-504e-4d5f-bcb7-5c0e62213374"],
+
+Cell[BoxData[
+ TagBox[
+  TemplateBox[{
+    RowBox[{
+      StyleBox[
+       TagBox["NetDecoder", "SummaryHead"], "NonInterpretableSummary"], 
+      StyleBox["[", "NonInterpretableSummary"], 
+      DynamicModuleBox[{Typeset`open = False}, 
+       PanelBox[
+        PaneSelectorBox[{False -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEBitmaps", "SquarePlusIconMedium"]], 
+                ButtonFunction :> (Typeset`open = True), Appearance -> None, 
+                Evaluator -> Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> {Automatic, 24}], 
+              GridBox[{{
+                 StyleBox[
+                  TemplateBox[{"\"Type\"", "\":\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], 
+                 StyleBox["\"Boolean\"", "SummaryItem"]}, {
+                 StyleBox[
+                  TemplateBox[{"\"Input\"", "\":\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], 
+                 StyleBox["\"real\"", "SummaryItem"]}}, BaselinePosition -> 
+               Automatic, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+            GridBoxAlignment -> {"Rows" -> {{Top}}}, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            GridFrameMargins -> {{0, 0}, {0, 0}}, BaselinePosition -> {1, 3}],
+           True -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEBitmaps", "SquareMinusIconMedium"]], 
+                ButtonFunction :> (Typeset`open = False), Appearance -> None, 
+                Evaluator -> Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> {Automatic, 24}], 
+              GridBox[{{
+                 StyleBox[
+                  TemplateBox[{"\"Type\"", "\":\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], 
+                 StyleBox["\"Boolean\"", "SummaryItem"]}, {
+                 StyleBox[
+                  TemplateBox[{"\"Input Depth\"", "\":\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], 
+                 StyleBox["0", "SummaryItem"]}, {
+                 StyleBox[
+                  TemplateBox[{"\"Input\"", "\":\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], 
+                 StyleBox["\"real\"", "SummaryItem"]}}, 
+               BaselinePosition -> {2, 1}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+            GridBoxAlignment -> {"Rows" -> {{Top}}}, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            GridFrameMargins -> {{0, 0}, {0, 0}}, 
+            BaselinePosition -> {1, 3}]}, 
+         Dynamic[Typeset`open], ImageSize -> Automatic], BaselinePosition -> 
+        Baseline, 
+        BaseStyle -> {
+         ShowStringCharacters -> False, NumberMarks -> False, PrintPrecision -> 
+          3, ShowSyntaxStyles -> False}]], 
+      StyleBox["]", "NonInterpretableSummary"]}]},
+   "CopyTag",
+   DisplayFunction->(#& ),
+   InterpretationFunction->("NetDecoder[<>]"& )],
+  False,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.832697816638523*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"a3017ee2-e95d-4b42-b3f1-2f581b3e75a0"]
+}, Open  ]]
+},
+WindowSize->{557, 606},
+WindowMargins->{{673, Automatic}, {Automatic, 197}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (May 13, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"08ead493-213a-48cf-a87f-0539e88d1e84"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 691, 16, 50, "Input",ExpressionUUID->"1ba07287-91dd-4587-83e7-4fa8ea4994b7"],
+Cell[1277, 40, 562, 12, 28, "Message",ExpressionUUID->"8a148f40-8df3-42f4-83fb-471e8b0a1eb6"],
+Cell[1842, 54, 180, 2, 33, "Output",ExpressionUUID->"9c1829c6-21d4-411b-af70-2777772824ba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2059, 61, 155, 2, 29, "Input",ExpressionUUID->"4eb02e85-504e-4d5f-bcb7-5c0e62213374"],
+Cell[2217, 65, 3975, 86, 62, "Output",ExpressionUUID->"a3017ee2-e95d-4b42-b3f1-2f581b3e75a0"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
